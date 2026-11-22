@@ -1,79 +1,109 @@
-import StoryCollection from './components/story-collection';
+import FeaturedStories from './components/featured-stories';
 
 export default function Home() {
   return (
     <div className="page-shell">
       <header className="site-header">
         <a className="brand" href="#" aria-label="Storio home">
-          <span className="brand-mark" aria-hidden="true">s</span>
-          <span>storio</span>
+          <span className="brand-mark" aria-hidden="true">S</span>
+          <span>STORIO</span>
         </a>
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#discover">Discover</a>
           <a href="#how-it-works">How it works</a>
         </nav>
-        <a className="header-link" href="#discover">Find a story <span aria-hidden="true">↗</span></a>
+        <a className="header-cta" href="#start-creating">Create a story <span aria-hidden="true">↗</span></a>
       </header>
 
       <main>
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <p className="eyebrow"><span className="eyebrow-dot" />A little room for big stories</p>
-            <h1 id="hero-title">Get lost in a<br />good <span>story.</span></h1>
+            <p className="eyebrow"><span className="eyebrow-dot" />Your life, beautifully told</p>
+            <h1 id="hero-title">Every moment<br />has a <span>story.</span></h1>
             <p className="hero-description">
-              Your next favorite read is closer than you think. Find thoughtful stories for
-              wherever your imagination wants to go.
+              Turn your meaningful moments, milestones, and memories into beautiful digital
+              stories worth sharing.
             </p>
-            <a className="primary-button" href="#discover">
-              Explore the collection <span aria-hidden="true">→</span>
-            </a>
-            <div className="reader-note">
-              <div className="reader-avatars" aria-hidden="true">
-                <span>J</span><span>M</span><span>A</span>
-              </div>
-              <p><strong>Good stories travel.</strong><br />Find one to pass along.</p>
+            <div className="hero-actions">
+              <a className="primary-button" href="#start-creating">
+                Create your story <span aria-hidden="true">↗</span>
+              </a>
+              <a className="text-button" href="#discover">
+                Explore stories <span aria-hidden="true">↓</span>
+              </a>
             </div>
+            <p className="hero-note"><span aria-hidden="true">✳</span> Made from your moments. Made to be shared.</p>
           </div>
 
-          <div className="hero-art" aria-label="Illustration of books ready to be read">
-            <div className="sun-shape" />
-            <div className="sparkle sparkle-one">✳</div>
-            <div className="sparkle sparkle-two">✦</div>
-            <div className="book-stack">
-              <div className="book book-back">
-                <span className="book-cover-label">A FIELD<br />OF QUIET</span>
-                <span className="cover-flower" aria-hidden="true">✿</span>
-              </div>
-              <div className="book book-middle">
-                <span className="book-cover-label">THE<br />LONG WAY<br />HOME</span>
-                <span className="cover-moon" aria-hidden="true" />
-              </div>
-              <div className="book book-front">
-                <span className="book-cover-kicker">A STORIO PICK</span>
-                <span className="book-cover-title">Somewhere,<br />the sea</span>
-                <span className="cover-wave" aria-hidden="true">〰</span>
-              </div>
+          <div className="hero-visual">
+            <div className="hero-photo-wrap">
+              <img
+                className="hero-photo"
+                src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1400&q=85"
+                alt="Friends celebrating a meaningful moment together outdoors"
+                fetchPriority="high"
+              />
+              <span className="photo-caption">A milestone, made personal</span>
             </div>
-            <div className="art-caption"><span>01</span> Turn the page. See where it takes you.</div>
+            <div className="hero-story-card">
+              <span className="story-card-mark" aria-hidden="true">✳</span>
+              <div>
+                <p>A MOMENT WORTH KEEPING</p>
+                <span>All the little things that led to this.</span>
+              </div>
+              <span className="hero-story-arrow" aria-hidden="true">↗</span>
+            </div>
+            <span className="hero-visual-note">Real life. Your point of view.</span>
           </div>
         </section>
 
-        <StoryCollection />
+        <FeaturedStories />
 
-        <section className="closing-note" id="how-it-works">
-          <span className="closing-sparkle" aria-hidden="true">✳</span>
-          <p>Every story opens a door.</p>
-          <h2>Go on. Pick one.</h2>
-          <a href="#discover">Browse the stories <span aria-hidden="true">↗</span></a>
+        <section className="how-section" id="how-it-works" aria-labelledby="how-title">
+          <div className="how-heading">
+            <p className="eyebrow"><span className="eyebrow-dot" />A few simple steps</p>
+            <h2 id="how-title">From your moment<br />to <span>your story.</span></h2>
+            <p>Meaningful stories start with the moments only you can tell.</p>
+          </div>
+          <div className="steps-grid">
+            <article className="step-card">
+              <span className="step-number">01</span>
+              <span className="step-icon" aria-hidden="true">✎</span>
+              <h3>Tell your story</h3>
+              <p>Gather the memories, details, and words that make this moment yours.</p>
+            </article>
+            <article className="step-card">
+              <span className="step-number">02</span>
+              <span className="step-icon" aria-hidden="true">✳</span>
+              <h3>Make it yours</h3>
+              <p>Bring it to life with your photos, your voice, and a style that feels like you.</p>
+            </article>
+            <article className="step-card">
+              <span className="step-number">03</span>
+              <span className="step-icon" aria-hidden="true">↗</span>
+              <h3>Share it with the world</h3>
+              <p>Give the people who matter a beautiful way to be part of the moment.</p>
+            </article>
+          </div>
+        </section>
+
+        <section className="final-cta" id="start-creating" aria-labelledby="final-cta-title">
+          <div className="cta-decoration cta-decoration-one" aria-hidden="true" />
+          <div className="cta-decoration cta-decoration-two" aria-hidden="true" />
+          <p className="eyebrow"><span className="eyebrow-dot" />Start with a moment</p>
+          <h2 id="final-cta-title">Your story deserves<br />a <span>place.</span></h2>
+          <a className="primary-button cta-button" href="#discover">
+            Start creating <span aria-hidden="true">↗</span>
+          </a>
         </section>
       </main>
 
       <footer className="site-footer">
         <a className="brand footer-brand" href="#" aria-label="Storio home">
-          <span className="brand-mark" aria-hidden="true">s</span><span>storio</span>
+          <span className="brand-mark" aria-hidden="true">S</span><span>STORIO</span>
         </a>
-        <p>Made for the love of a good story.</p>
-        <span>© 2026 Storio</span>
+        <p>Made for the moments that make us.</p>
+        <span>© 2026 STORIO</span>
       </footer>
     </div>
   );

@@ -1,9 +1,9 @@
-import './globals.css';
+import './site.css';
 
 export const metadata = {
-  title: 'Storio — Stories worth staying for',
+  title: 'STORIO — Every moment has a story',
   description:
-    'Find your next favorite read with Storio, a cozy corner for stories worth sharing.',
+    'Turn your meaningful moments, milestones, and memories into beautiful digital stories worth sharing.',
 };
 
 export default function RootLayout({ children }) {

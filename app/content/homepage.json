@@ -1,0 +1,88 @@
+{
+  "navigation": [
+    { "label": "Discover", "href": "#discover" },
+    { "label": "How it works", "href": "#how-it-works" }
+  ],
+  "hero": {
+    "eyebrow": "Your life, beautifully told",
+    "headline": "Every moment has a",
+    "highlight": "story.",
+    "description": "Turn your meaningful moments, milestones, and memories into beautiful digital stories worth sharing.",
+    "primaryAction": "Create your story",
+    "secondaryAction": "Explore stories",
+    "image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1400&q=85",
+    "imageAlt": "Friends sitting together outdoors and smiling",
+    "imageCaption": "The moments that bring us together"
+  },
+  "featured": {
+    "eyebrow": "Made from moments that matter",
+    "heading": "Your life, in",
+    "highlight": "your words.",
+    "description": "A few ways a personal moment can become a story worth keeping.",
+    "filters": [
+      { "label": "All moments", "category": "all" },
+      { "label": "Milestones", "category": "milestones" },
+      { "label": "New beginnings", "category": "beginnings" },
+      { "label": "Everyday moments", "category": "everyday" }
+    ],
+    "stories": [
+      {
+        "category": "milestones",
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=85",
+        "imageAlt": "College friends sharing a moment while working together",
+        "label": "A MILESTONE",
+        "title": "A Graduation to Remember",
+        "description": "The late nights, the proud hugs, the moment it all became real.",
+        "tone": "terracotta"
+      },
+      {
+        "category": "beginnings",
+        "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85",
+        "imageAlt": "A mountain lake at the beginning of a new day",
+        "label": "A NEW CHAPTER",
+        "title": "The Beginning of Something New",
+        "description": "One brave yes, and the first page of a life-changing journey.",
+        "tone": "sage"
+      },
+      {
+        "category": "everyday",
+        "image": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=85",
+        "imageAlt": "A family standing together by the ocean at sunset",
+        "label": "THE LITTLE THINGS",
+        "title": "Little Moments, Big Memories",
+        "description": "The ordinary afternoons that turn out to mean everything.",
+        "tone": "sand"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Simple by design",
+    "heading": "A story only you can",
+    "highlight": "tell.",
+    "description": "Start with what happened. STORIO helps you shape it into something personal.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Tell your story",
+        "description": "Gather the memories, details, and words that make this moment yours."
+      },
+      {
+        "number": "02",
+        "title": "Make it yours",
+        "description": "Bring it to life with your photos, your voice, and a style that feels like you."
+      },
+      {
+        "number": "03",
+        "title": "Share it with the world",
+        "description": "Give the people who matter a beautiful way to be part of the moment."
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Start with a moment",
+    "headline": "Your story deserves a",
+    "highlight": "place.",
+    "action": "Start creating"
+  },
+  "footer": "Made for the moments that make us."
+}
